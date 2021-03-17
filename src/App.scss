@@ -1,0 +1,41 @@
+header {
+  background: mediumturquoise;
+  color: white;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+
+  nav a {
+    margin-left: 10px;
+  }
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
+    0 -6px 16px -6px #00000008;
+}
+
+figcaption {
+  padding: 20px 0;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+section {
+  margin-top: 25px;
+  display: flex;
+}
