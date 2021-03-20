@@ -21,30 +21,50 @@ h1 {
   text-align: center;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+.movie-grid {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
 }
 
-img {
-  border-radius: 8px;
-  -webkit-box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
-          box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
-}
-
-figcaption {
-  padding: 20px 0;
-  text-align: center;
-}
-
-a {
-  color: white;
-}
-
-section {
-  margin-top: 25px;
+.movie-grid .movie-item {
+  height: 290px;
+  background: #2b2b2b;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+.movie-grid .movie-item > * {
+  margin-bottom: 12px;
+}
+
+.movie-grid .movie-item > *:first-child {
+  font-weight: bold;
+}
+
+.movie-grid .movie-item .genres {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-grid .movie-item .genres li {
+  font-size: 14px;
+  margin-bottom: 2px;
 }
 /*# sourceMappingURL=App.css.map */

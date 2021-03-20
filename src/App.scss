@@ -15,27 +15,40 @@ h1 {
     text-align: center;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
+.movie-grid {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
 
-img {
-  border-radius: 8px;
-  box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
-    0 -6px 16px -6px #00000008;
-}
+  .movie-item {
+    height: 290px;
+    background: rgb(43, 43, 43);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
 
-figcaption {
-  padding: 20px 0;
-  text-align: center;
-}
+    > * {
+      margin-bottom: 12px;
 
-a {
-  color: white;
-}
+      &:first-child {
+        font-weight: bold;
+      }
+    }
 
-section {
-  margin-top: 25px;
-  display: flex;
+    .genres {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        font-size: 14px;
+        margin-bottom: 2px;
+      }
+    }
+  }
 }
