@@ -58,6 +58,17 @@ h1 {
   font-weight: bold;
 }
 
+.movie-grid .movie-item .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.movie-grid .movie-item .rating img {
+  width: 20px;
+  height: 20px;
+}
+
 .movie-grid .movie-item .genres {
   list-style: none;
   padding: 0;

@@ -5,7 +5,7 @@ var movies = [
         director: 'Frank Darabont',
         duration: '2h 22min',
         genre: ['Crime', 'Drama'],
-        rate: '9.3'
+        rate: '3'
     },
     {
         title: 'The Godfather',
@@ -13,7 +13,7 @@ var movies = [
         director: 'Francis Ford Coppola',
         duration: '2h 55min',
         genre: ['Crime', 'Drama'],
-        rate: '9.2'
+        rate: '4'
     },
     {
         title: 'The Godfather: Part II',
@@ -21,7 +21,7 @@ var movies = [
         director: 'Francis Ford Coppola',
         duration: '3h 22min',
         genre: ['Crime', 'Drama'],
-        rate: '9.0'
+        rate: '5'
     },
     {
         title: 'The Dark Knight',

@@ -1,13 +1,20 @@
+import Rating from "./Rating";
+
 const MovieCover = (props) => {
+
+    const { title, year, director, duration, rate, genre } = props;
+
     return (  
         <div className="movie-item">
-            <div>{props.movie.title}</div>
-            <div>{props.movie.year}</div>
-            <div>{props.movie.director}</div>
-            <div>{props.movie.duration}</div>
-            <div>{props.movie.rate}</div>
+            <div>{title}</div>
+            <div>{year}</div>
+            <div>{director}</div>
+            <div>{duration}</div>
+
+            <Rating rating={rate} />
+
             <ul className='genres'>
-                {props.movie.genre.map((genre, i) => <li key={i}>{genre}</li>)}
+                {genre.map((genre, i) => <li key={i}>{genre}</li>)}
             </ul>
         </div>
     );
