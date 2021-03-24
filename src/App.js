@@ -6,13 +6,11 @@ import ImageBox from "./components/ImageBox"
 
 function App() {
 
-  // test
-
   const log = () => {
     console.log('Hello World');
   }
 
-  
+
   return (
     <div className="App">
       <MyHeader />
